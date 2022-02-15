@@ -108,3 +108,4 @@ Java acces specifiers
 * can be called by other class in same package
 
 ## Method overloading in java
+Contains any number of methods. with or without paramters . The parameter in a method are called type signitures. When this is the case its said to be method overloading. it demostrates the concept of **polymorphism**. Java uses the type and number of arguments to guide to  determine which version of the overloaded method is called.  
