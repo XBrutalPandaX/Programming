@@ -110,16 +110,30 @@ int[] x;
 x={1,2,4,5};
 // THis is not allowed
 ```
-## Foreach Loop for Arrays
+### Foreach Loop for Arrays
 we can use foreach loop to traverse array wihtout  index
 ```java
 for(int i: list_A){
     System.out.println(i);
 }
 ```
-## PAsssing Array to Methods 
+### PAsssing Array to Methods 
+We can pass arrays to methods as follow 
+```java 
+public class playground {
+    public static void main(String[] args) {
+        int[] list={12,67,90};
+        display(list);
+    }
+    public static void display(int[] list) {
+        for (int a: list) {
+            out.println(a);
+        }
 
+    }
+}
 
+```
 ## TYpes of Arrays
 * One-dimensional array
 * Multi-dimensional array
@@ -165,3 +179,71 @@ Syntax:
 #### Processing array elements
 Index number used to access or mainipulate each element.
 nested looping statment should be used.
+
+## Methods
+Is a collection of statments grouped together to perform an operation .
+### Creating Method
+```java
+public static int methodName(int a, int b) {
+// body goes here
+}
+```
+* Public static- modifier 
+* int - return type
+* methodName - name of method
+* a,b -parameters
+* int a , int b - list of parameters
+
+> modifier - define access type 
+> teturnType - return value 
+> param- list of paramters
+
+### Method OVerloading 
+When a class has 2 or more methods by the same name with diffrent paramters it is known as ```Method Overloading``` . It is diffrent from overriding. 
+example
+``` java
+public static int mult(int a,int b){
+    int result= a*b;
+    return result;
+}
+public static int mult(int a,int b, int c){
+    int result= a*b*c;
+    return result;
+}
+public static int mult(double x,double y){
+    int result= a*b;
+    return result;
+}
+```
+### Varaible Arguments
+We can pass variable name of arguments of the same type to a method. 
+``` typeName... parameterName```
+
+```java
+    public static void main(String[] args) {
+        int[] list={12,67,90,80,67};
+        display(list);
+    }
+
+    public static void display(int... list) {
+        for (int a: list) {
+            out.println(a);
+        }
+    }
+```
+### Strings 
+We can create string objects by using new keyword and a constructor. String class has 11 constructors that allow us to provide intial value of string using diffrent sources such as an arry of charcters.
+```java
+    char[] helloArray = { 'h', 'e', 'l', 'l', 'o', '.' };
+    String helloString = new String(helloArray);
+    System.out.println( helloString );
+```
+```String class is immutable once its created a String object cannot be changed```
+#### String Length
+method used to obtain info about an object are known as ``` accessor methods```. One example is <b>length()</b> 
+### Concatentating Strings
+we can concatenate two strings with 
+```java 
+string1.concat(string2);
+```
+ 
