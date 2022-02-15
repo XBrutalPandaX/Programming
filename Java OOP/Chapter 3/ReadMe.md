@@ -23,10 +23,10 @@ Data defined in a class is instance variable.
 When we want to access data members or methods of a class we have ot write    
 * Accessing data member**objecname.mebername(dot operator);**   
 * Accessing Method **objectname.methodname();**  
-``` classname objectname= new classname()```
-  suppose   
-  >> Box b1= new Box();
-  >> box b2 = b1;  
+``` classname objectname= new classname()```  
+suppose   
+Box b1= new Box();
+box b2 = b1;  
 B2 refers to the same object as b1 . Any changes made to the objects through b2 will affect the object to which b1 is reffering . 
 We havent created a copy of the object rather we only made a copy of the reference . 
 ## Class Methods 
@@ -79,4 +79,32 @@ is the name of the reference that referes to a calling object itself. Local vari
 
 #### static:
 If we want to create a class member that can be be used independently without creating any object of that class we can use **Static**. It can be accessed befor any object is created.   
-We cna decaler both methods and variables to be static. main() is declared as static because it must be called befor any object exist . Instance variable declared as static are global variables. 
+We cna decaler both methods and variables to be static. main() is declared as static because it must be called befor any object exist . Instance variable declared as static are global variables.   
+When objects of its class are declared no copy og a static variable is made instead alll instance of the class share the same static variable.   
+Methods declared as static have several restrictions 
+1. Can only call othher static methods.
+2. only access static data.
+3. Cannot refer to **this**.
+
+# Encapsulation
+Java acces specifiers  
+### Public : 
+* member can bec accessed by any other code
+* Makes a method or variable completely available to all classes
+* Accessed by any other class
+### Private: 
+* to hide method or variable from other classes
+* can be used by its own class but not by objects of any other class.
+* cant be inherited by subcalss.
+* can be seen from its own class
+### Protected
+* applies when inhertiance is involed.
+* If we want the element to be seen outside the current package but only to class inherited from class directly we declare protected.
+### default: 
+* when no modifier is used
+* are not accessible in other packages. 
+* can be read or changed by another class in the same package. 
+* its visible to subclasses or any other class 
+* can be called by other class in same package
+
+## Method overloading in java
