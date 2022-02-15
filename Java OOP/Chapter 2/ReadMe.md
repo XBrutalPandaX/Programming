@@ -110,6 +110,15 @@ int[] x;
 x={1,2,4,5};
 // THis is not allowed
 ```
+## Foreach Loop for Arrays
+we can use foreach loop to traverse array wihtout  index
+```java
+for(int i: list_A){
+    System.out.println(i);
+}
+```
+## PAsssing Array to Methods 
+
 
 ## TYpes of Arrays
 * One-dimensional array
